@@ -1,26 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --Black: #000000;
+    --White: #FFFFFF;
+    --Grey: #1C1C1C;
+    --Grey-2: #272727;
+    --Royal-Blue: #4169E1;
+    --Instagram: #D62976;
+    --Linkedin: #0074B4;
+    --GitHub: #0E2350;
+    --teste: #023437;
+}
+body{
+    background-color: var(--Grey-2);
 }
 header{
-    background-color: red;
     width: 100%;
     height: 10vh;
     display: flex;
     flex-direction: row;
+    margin-bottom: 200px;
 }
 .front{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    background-color: blue;
+    background-color: var(--Grey);
     width: 50%;
     height: 100%;
-    font-size: 3rem;
+}
+.div-foto{
+    width: 80px;
+    border-radius: 100%;
+    display: flex;
+}
+.foto{
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+}
+.nome{
+    display: flex;
+    font-size: clamp(2rem, 3rem, 4vw);
+    color: var(--White);
 }
 .links{
-    background-color: purple;
+    background-color: var(--Grey);
     display: flex;
     width: 50%;
     height: 100%;
@@ -31,79 +61,102 @@ header{
 .redes-sociais{
     width: 100px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
-    background-color: blue;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    position: relative;
     top: 0;
+    position: relative;
+}
+.redes-sociais:nth-child(1){
+    background-color: var(--Instagram);
+}
+.redes-sociais:nth-child(2){
+    background-color: var(--Linkedin);
+}
+.redes-sociais:nth-child(3){
+    background-color: var(--GitHub);
 }
 .redes-sociais:hover{
     top: -4px;
-    box-shadow: 0 4px 4px rgb(83, 83, 83);
+    box-shadow: 0 4px 4px rgb(69, 69, 69);
     transition: all 0.2s ease-in-out;
 }
 i{
     color: #FFFFFF;
 }
 .sobre-mim{
-    background-color: green;
+    background-color: var(--Grey-2);
     width: 100%;
-    height: 70vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .apresentacao{
-    background-color: rgb(128, 87, 0);
+    background-color: var(--Grey);
+    color: var(--White);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 20%;
-    font-size: 3rem;
+    width: 90%;
+    height: 30%;
+    border-radius: 100px;
+    font-size: clamp(2rem, 3rem, 4vw);
+    margin-bottom: 20px;
 }
-.texto-junior{
+.texto-apresentacao{
     width: 100%;
-    background-color: red;
-    height: 20%;
-    font-size: 2rem;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    font-size: clamp(0.6rem, 1.1rem, 1.3vw);
+    font-weight: 900;
+    background-color: var(--Grey-2);
+    color: var(--White);
+    padding: 10px;
 }
 .area-projetos{
-    background-color: yellow;
+    background-color: var(--Grey-2);
     width: 100%;
     height: 200vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 .nome-area{
-    background-color: purple;
+    background-color: var(--Grey);
+    color: var(--White);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 5%;
-    font-size: 2rem;
+    border-radius: 100px;
+    font-size: clamp(1rem, 2rem, 2.3rem);
 }
 .projetos{
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: 30%;
     height: 30%;
-    background-color: red;
+    background-color: var(--Grey);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     position: relative;
     top: 0;
 }
 .projetos:hover{
     top: -10px;
-    box-shadow: 0 8px 4px rgb(83, 83, 83);
+    box-shadow: 0 8px 4px rgb(69, 69, 69);
     transition: all 0.2s ease-in-out;
 }
 .espaco-img{
@@ -111,6 +164,14 @@ i{
     width: 100%;
     height: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.teste{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 .detalhes{
     background-color: green;
@@ -119,17 +180,115 @@ i{
     cursor: pointer;
 }
 .nome-projeto{
-    background-color: purple;
+    background-color: var(--Grey);
+    color: var(--White);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 20%;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5rem, 3vw);
     cursor: pointer;
 }
-p{
-    background-color: grey;
+.descricao{
+    background-color: var(--Grey-2);
+    color: var(--White);
     width: 100%;
     height: 80%;
 }
+footer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.esquerda-baixo{
+    display: flex;
+    width: 49.8%;
+    height: 100%;
+    background-color: var(--Grey);
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.direita-baixo{
+    width: 49.8%;
+    height: 100%;
+    background-color: var(--Grey);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.outra-contato{
+    width: 100%;
+    height: 20%;
+    background-color: var(--Grey);
+    color: var(--White);
+    font-size: clamp(1rem, 2rem, 3vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contatos{
+    background-color: var(--Grey-2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.texto-contato{
+    color: var(--White);
+}
+.div-contato{
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.link-contato{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: blue;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-contato:hover{
+    top: -4px;
+    box-shadow: 0 4px 4px rgb(69, 69, 69);
+    transition: all 0.2s ease-in-out;    
+}
+.div-gmail{
+    width: 100%;
+    height: 15%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dev-club{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    display: flex;
+}
+.info-devclub{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: blue;
+}
+
