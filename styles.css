@@ -238,7 +238,6 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-decoration: none;
 }
 .link-contato i{
     margin: 0 0.5rem;
@@ -263,4 +262,7 @@ footer{
 }
 .link-contato:nth-child(5){
     background-color: var(--Instagram);
+}
+a{
+    text-decoration: none;
 }
