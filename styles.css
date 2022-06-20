@@ -73,6 +73,7 @@ i{
     cursor: pointer;
     top: 0;
     position: relative;
+    text-decoration: none;
 }
 .redes-sociais:last-child{
     margin-right: 20px;
@@ -225,7 +226,7 @@ footer{
     flex-direction: row;
 }
 .link-contato{
-    width: 120px;
+    width: 130px;
     height: 30px;
     color: var(--Branco);
     margin-left: 10px;
@@ -237,15 +238,16 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 }
-.link-contato a i{
+.link-contato i{
     margin: 0 0.5rem;
     margin-left: 10px;
 }
 .link-contato:hover{
     top: -4px;
     box-shadow: 0 4px 4px rgb(69, 69, 69);
-    transition: all 0.2s ease-in-out;    
+    transition: all 0.2s ease-in-out;   
 }
 .link-contato:nth-child(1){
     background-color: var(--WhatsApp);
