@@ -6,31 +6,34 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --Black: #000000;
-    --White: #FFFFFF;
-    --Grey: #1C1C1C;
-    --Grey-2: #272727;
-    --Royal-Blue: #4169E1;
+    --Branco: #FFFFFF;
+    --Cinza: #1C1C1C;
+    --Cinza-2: #272727;
     --Instagram: #D62976;
     --Linkedin: #0074B4;
     --GitHub: #0E2350;
-    --teste: #023437;
+    --WhatsApp: #00FB60;
+    --Gmail: #F14336;
+    --Hotmail: #2070B7;
+    --Facebook: #0363E0;
 }
 body{
-    background-color: var(--Grey-2);
+    background-color: var(--Cinza-2);
 }
 header{
     width: 100%;
     height: 10vh;
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
+}
+i{
+    color: var(--Branco);
 }
 .front{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    background-color: var(--Grey);
+    background-color: var(--Cinza);
     width: 50%;
     height: 100%;
 }
@@ -47,10 +50,10 @@ header{
 .nome{
     display: flex;
     font-size: clamp(2rem, 3rem, 4vw);
-    color: var(--White);
+    color: var(--Branco);
 }
 .links{
-    background-color: var(--Grey);
+    background-color: var(--Cinza);
     display: flex;
     width: 50%;
     height: 100%;
@@ -71,13 +74,13 @@ header{
     top: 0;
     position: relative;
 }
-.redes-sociais:nth-child(1){
-    background-color: var(--Instagram);
+.redes-sociais:last-child{
+    margin-right: 20px;
 }
-.redes-sociais:nth-child(2){
+.redes-sociais:nth-child(1){
     background-color: var(--Linkedin);
 }
-.redes-sociais:nth-child(3){
+.redes-sociais:nth-child(2){
     background-color: var(--GitHub);
 }
 .redes-sociais:hover{
@@ -85,28 +88,31 @@ header{
     box-shadow: 0 4px 4px rgb(69, 69, 69);
     transition: all 0.2s ease-in-out;
 }
-i{
-    color: #FFFFFF;
+.ilustracao{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.programacao{
+    width: 100%;
+    height: 100%;
 }
 .sobre-mim{
-    background-color: var(--Grey-2);
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .apresentacao{
-    background-color: var(--Grey);
-    color: var(--White);
+    background-color: var(--Cinza);
+    color: var(--Branco);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 30%;
-    border-radius: 100px;
+    width: 100%;
+    height: 60%;
     font-size: clamp(2rem, 3rem, 4vw);
-    margin-bottom: 20px;
 }
 .texto-apresentacao{
     width: 100%;
@@ -116,38 +122,35 @@ i{
     align-items: center;
     font-size: clamp(0.6rem, 1.1rem, 1.3vw);
     font-weight: 900;
-    background-color: var(--Grey-2);
-    color: var(--White);
+    background-color: var(--Cinza);
+    color: var(--Branco);
     padding: 10px;
 }
 .area-projetos{
-    background-color: var(--Grey-2);
+    background-color: var(--Cinza-2);
     width: 100%;
-    height: 200vh;
+    height: 130vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* padding-left: 20px;
-    padding-right: 20px; */
 }
 .nome-area{
-    background-color: var(--Grey);
-    color: var(--White);
+    background-color: var(--Cinza-2);
+    color: var(--Branco);
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 5%;
-    border-radius: 100px;
-    font-size: clamp(1rem, 2rem, 2.3rem);
+    align-items: flex-end;
+    width: 100%;
+    height: 20vh;
+    font-size: clamp(1rem, 3rem, 3.2rem);
 }
 .projetos{
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 30%;
-    background-color: var(--Grey);
+    height: 45%;
+    background-color: var(--Cinza);
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
@@ -167,21 +170,14 @@ i{
     display: flex;
     justify-content: center;
 }
-.teste{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
 .detalhes{
-    background-color: green;
     width: 100%;
     height: 50%;
     cursor: pointer;
 }
 .nome-projeto{
-    background-color: var(--Grey);
-    color: var(--White);
+    background-color: var(--Cinza);
+    color: var(--Branco);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,104 +187,78 @@ i{
     cursor: pointer;
 }
 .descricao{
-    background-color: var(--Grey-2);
-    color: var(--White);
+    background-color: var(--Cinza-2);
+    color: var(--Branco);
     width: 100%;
     height: 80%;
 }
 footer{
     width: 100%;
-    height: 70vh;
+    height: 15vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.esquerda-baixo{
-    display: flex;
-    width: 49.8%;
-    height: 100%;
-    background-color: var(--Grey);
-    padding: 20px;
-    flex-direction: column;
-    border-radius: 15px;
-}
-.direita-baixo{
-    width: 49.8%;
-    height: 100%;
-    background-color: var(--Grey);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-}
-.outra-contato{
+.contatos{
     width: 100%;
-    height: 20%;
-    background-color: var(--Grey);
-    color: var(--White);
+    height: 100%;
+    background-color: var(--Cinza);
+    display: flex;
+    flex-direction: column;
+}
+.p-contato{
+    width: 100%;
+    height: 40%;
+    background-color: var(--Cinza);
+    color: var(--Branco);
     font-size: clamp(1rem, 2rem, 3vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contatos{
-    background-color: var(--Grey-2);
+.contatos-2{
+    background-color: var(--Cinza);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 20px;
-}
-.texto-contato{
-    color: var(--White);
-}
-.div-contato{
-    width: 100%;
-    height: 15%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    flex-direction: row;
 }
 .link-contato{
-    width: 100px;
+    width: 120px;
     height: 30px;
-    margin-left: 20px;
-    background-color: blue;
+    color: var(--Branco);
+    margin-left: 10px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     position: relative;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+}
+.link-contato a i{
+    margin: 0 0.5rem;
+    margin-left: 10px;
 }
 .link-contato:hover{
     top: -4px;
     box-shadow: 0 4px 4px rgb(69, 69, 69);
     transition: all 0.2s ease-in-out;    
 }
-.div-gmail{
-    width: 100%;
-    height: 15%;
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.link-contato:nth-child(1){
+    background-color: var(--WhatsApp);
 }
-.dev-club{
-    width: 100%;
-    height: 20%;
-    background-color: red;
-    display: flex;
+.link-contato:nth-child(2){
+    background-color: var(--Gmail);
 }
-.info-devclub{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: blue;
+.link-contato:nth-child(3){
+    background-color: var(--Hotmail);
 }
-
+.link-contato:nth-child(4){
+    background-color: var(--Facebook);
+}
+.link-contato:nth-child(5){
+    background-color: var(--Instagram);
+}
