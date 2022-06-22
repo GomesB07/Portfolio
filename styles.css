@@ -24,6 +24,11 @@ body{
     width: 100%;
     height: 100%;
 }
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -145,16 +150,6 @@ a{
     padding: 10px;
     padding-bottom: 50px;
 }
-.area-projetos{
-    background-color: var(--Cinza-2);
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
 .nome-area{
     background-color: var(--Cinza-2);
     color: var(--Branco);
@@ -164,6 +159,17 @@ a{
     width: 100%;
     height: 20vh;
     font-size: clamp(1rem, 3rem, 3.2rem);
+}
+.area-projetos{
+    background-color: var(--Cinza-2);
+    width: 100%;
+    min-height: 1166.2px;
+    max-height: 1715px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 }
 .projetos{
     display: flex;
@@ -215,14 +221,15 @@ a{
     width: 100%;
     height: 80%;
 }
-footer{
+
+#footer{
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     position: absolute;
     bottom: 0;
-    left: 0;
+    clear: both;
 }
 .contatos{
     width: 100%;
@@ -230,70 +237,53 @@ footer{
     background-color: var(--Cinza);
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 .p-contato{
     width: 100%;
     height: 40%;
-    background-color: var(--Cinza);
+    background-color: blue;
+    /* background-color: var(--Cinza); */
     color: var(--Branco);
     font-size: clamp(1rem, 2rem, 3vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contatos-2{
-    background-color: var(--Cinza);
+.div-link{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    background-color: var(--Cinza);
 }
 .link-contato{
-    width: 130px;
-    height: 30px;
-    color: var(--Branco);
-    margin-left: 10px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    top: 0;
+    width: 18%;
+    height: 25px;
     display: flex;
-    justify-content: flex-start;
+    border-radius: 5px;
     align-items: center;
+    color: var(--Branco);
 }
 .link-contato i{
-    margin: 0 0.5rem;
-    margin-left: 10px;
-}
-.link-contato:hover{
-    top: -4px;
-    box-shadow: 0 4px 4px rgb(69, 69, 69);
-    transition: all 0.2s ease-in-out;   
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
 }
 .link-contato:nth-child(1){
     background-color: var(--WhatsApp);
 }
 .link-contato:nth-child(2){
-    background-color: var(--Gmail);
-}
-.link-contato:nth-child(3){
-    background-color: var(--Hotmail);
-}
-.link-contato:nth-child(4){
     background-color: var(--Facebook);
 }
-.link-contato:nth-child(5){
+.link-contato:nth-child(3){
     background-color: var(--Instagram);
 }
-
-/* @media (max-width: 1400px){
-    .area-projetos{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-} */
+.link-contato:nth-child(4){
+    background-color: var(--Hotmail);
+}
+.link-contato:nth-child(5){
+    background-color: var(--Gmail);
+}
