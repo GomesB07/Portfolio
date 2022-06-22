@@ -240,8 +240,7 @@ a{
 .p-contato{
     width: 100%;
     height: 40%;
-    background-color: blue;
-    /* background-color: var(--Cinza); */
+    background-color: var(--Cinza);
     color: var(--Branco);
     font-size: clamp(1rem, 2rem, 3vw);
     display: flex;
@@ -257,7 +256,7 @@ a{
     background-color: var(--Cinza);
 }
 .link-contato{
-    width: 18%;
+    width: 120px;
     height: 25px;
     display: flex;
     border-radius: 5px;
