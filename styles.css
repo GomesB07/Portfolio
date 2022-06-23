@@ -10,6 +10,7 @@
     --Preto: #000000;
     --Cinza: #1C1C1C;
     --Cinza-2: #272727;
+    --Cinza-3: #999999;
     --Instagram: #D62976;
     --Linkedin: #0074B4;
     --GitHub: #0E2350;
@@ -136,6 +137,7 @@ a{
     width: 100%;
     height: 60%;
     font-size: clamp(2rem, 3rem, 4vw);
+    text-transform: uppercase;
 }
 .texto-apresentacao{
     width: 100%;
@@ -190,6 +192,9 @@ a{
     box-shadow: 0 8px 4px rgb(69, 69, 69);
     transition: all 0.2s ease-in-out;
 }
+.link-projeto{
+    height: 100%;
+}
 .espaco-img{
     background-color: var(--Cinza);
     width: 100%;
@@ -216,14 +221,17 @@ a{
     height: 20%;
     font-size: clamp(1rem, 1.5rem, 3vw);
     cursor: pointer;
+    text-transform: uppercase;
 }
 .descricao{
     background-color: var(--Cinza-2);
     color: var(--Branco);
     width: 100%;
     height: 80%;
-    padding: 10px;
+    padding: 20px;
+    color: var(--Cinza-3);
     font-size: clamp(0.5rem, 1rem, 1.5rem);
+    text-transform: uppercase;
 }
 
 #footer{
@@ -250,6 +258,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 .div-link{
     width: 100%;
@@ -294,6 +303,7 @@ a{
 .link-contato:nth-child(5){
     background-color: var(--Gmail);
 }
+
 @media (max-width: 699px){
     #footer{
         margin-top: 1460px;
