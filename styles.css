@@ -45,6 +45,8 @@ header{
     height: 10vh;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    z-index: 2;
 }
 i{
     color: var(--Branco);
@@ -70,10 +72,14 @@ a{
     border-radius: 100%;
     display: flex;
 }
-.nome{
+h1{
     display: flex;
     font-size: clamp(0.3rem, 3rem, 4vw);
-    color: var(--Branco);
+    background-image: linear-gradient(to bottom, #020024, #0000d6, #00d4ff);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .links{
     background-color: var(--Cinza);
