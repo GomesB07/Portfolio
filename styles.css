@@ -17,6 +17,9 @@
     --WhatsApp: #00FB60;
     --Gmail: #F14336;
     --Scroll: #2B2BAE;
+    --Html: #FB3535;
+    --Css:  #009CE6;
+    --JavaScript: #FFCC4C;
 }
 body{
     background-color: var(--Cinza-2);
@@ -110,14 +113,14 @@ h1{
     width: 100%;
     height: 100%;
 }
-.sobre-mim{
+.apresentacao{
     width: 100%;
-    height: 100%;
+    height: 25vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.apresentacao{
+.sobre-mim{
     background-color: var(--Cinza);
     color: var(--Branco);
     display: flex;
@@ -131,9 +134,6 @@ h1{
 .texto-apresentacao{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: clamp(0.6rem, 1.1rem, 1.3vw);
     font-weight: 900;
     background-color: var(--Cinza);
@@ -141,7 +141,14 @@ h1{
     padding: 20px;
     padding-bottom: 50px;
 }
-.nome-area{
+.dev-club{
+    cursor: pointer;
+    color: #551A8B;
+}
+.dev-club:hover{
+    text-decoration: underline;
+}
+.nome-area-projetos{
     background-color: var(--Cinza-2);
     color: var(--Branco);
     display: flex;
@@ -170,7 +177,7 @@ h1{
     height: 500px;
     background-color: var(--Cinza);
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     cursor: pointer;
     top: 0;
     margin-bottom: 30px;
@@ -182,12 +189,12 @@ h1{
     transition: all 0.2s ease-in-out;
 }
 .link-projeto{
-    height: 100%;
+    height: 50%;
 }
 .espaco-img{
     background-color: var(--Cinza);
     width: 100%;
-    height: 50%;
+    height: 100%;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -197,7 +204,7 @@ h1{
 }
 .detalhes{
     width: 100%;
-    height: 50%;
+    height: 100%;
     cursor: pointer;
 }
 .nome-projeto{
@@ -216,7 +223,7 @@ h1{
     background-color: var(--Cinza-2);
     color: var(--Branco);
     width: 100%;
-    height: 80%;
+    height: 65%;
     padding: 20px;
     color: var(--Cinza-3);
     font-size: clamp(0.5rem, 1rem, 1.5rem);
@@ -225,7 +232,33 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
+.tecnologias{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tecnologias-b{
+    width: 20%;
+    height: 20px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--Branco);
+    background-color: transparent;
+    cursor: pointer;
+}
+.tecnologias-b:nth-child(1){
+    border: 2px solid var(--Html);
+}
+.tecnologias-b:nth-child(2){
+    border: 2px solid var(--Css);
+}
+.tecnologias-b:nth-child(3){
+    border: 2px solid var(--JavaScript);
+}
 #footer{
     height: 100px;
     width: 100%;
@@ -252,7 +285,7 @@ h1{
     align-items: center;
     text-transform: uppercase;
 }
-.div-link{
+.div-link-contatos{
     width: 100%;
     height: 100%;
     display: flex;
